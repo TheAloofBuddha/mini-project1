@@ -105,22 +105,23 @@
               gap: 20px;
             "
           >
-            <input
+            <div><input
               type="text"
               id="name"
               placeholder="Enter your name"
               style="padding: 10px; font-size: 16px"
               required
             />
-<!--             New code inserted -->
-            <p class ="name_error" style="display: inline-block"></p>
-            <input
+            <p class ="name_error" style="display: inline-block"></p></div>
+            <div><input
               type="number"
               id="age"
               placeholder="Enter your age"
               style="padding: 10px; font-size: 16px"
               required
             />
+            <p class="error_age"></p></div>
+            
             <input
               type="email"
               id="email"
