@@ -22,7 +22,10 @@ document.getElementById("form").onsubmit = function (e) {
     alert("You have to be 18 or above to book a session.");
     return;
   }
-
+  if (phone.length < 10 || phone.length >13){
+    alert("Enter a valid number length");
+    return;
+  }
   let price = [];
 
   let oneWeek = new Date(now);
